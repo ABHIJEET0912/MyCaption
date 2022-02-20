@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int choice;
+    printf("Pick an item: \n1.pen\n2.pencil\n3.eraser\n4.book\n");
+    printf("Enter your choice:-");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+        printf("You picked Pen.");
+        break;
+        case 2:
+        printf("You picked pencil.");
+        break;
+        case 3:
+        printf("You picked Eraser.");
+        break;
+        case 4:
+        printf("You picked Book.");
+        break;
+        default:printf("Invalid choice.");
+        break;
+    }
+}
