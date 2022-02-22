@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int choice;
+    printf("Pick an item: \n1.Ice Tea\n2.Burger\n3.Pasta\n4.Sandwich\n5.Cold drink\n6.Momos\n");
+    printf("Enter your choice:-");
+    scanf("%d", &choice);
+    switch(choice)
+    {
+        case 1:
+        printf("You picked Ice tea it will cost you 40 rupess.\n");
+        printf("Thank you for you order.");    
+        break;
+        case 2:
+        printf("You picked Burger it Will cost you 129 rupess.\n");
+        printf("Thank you for you order.");        
+        break;
+        case 3:
+        printf("You picked Pasta it will cost you 179 rupess.\n");
+        printf("Thank you for you order.");
+        break;
+        case 4:
+        printf("You picked Sandwich it will cost you 149 rupess.\n");
+        printf("Thank you for you order.");
+        break;
+        case 5:
+        printf("You picked Cold drink it will cost you 50 rupess.\n");
+        printf("Thank you for you order.");
+        break;
+        case 6:
+        printf("You Picked Momos it will cost you 40 rupess.\n");
+        printf("Thank you for you order.");
+        break;
+        default:printf("Invalid choice.");
+        break;
+    }
+}
