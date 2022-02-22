@@ -1,0 +1,19 @@
+#include<stdio.h>
+int Sumofdigit(int num);
+int main()
+{
+    int num, sum;
+    printf("Enter the First Number:-");
+    scanf("%d", &num);
+    
+    sum = Sumofdigit(num);
+    
+    printf("Sum of Digits of %d = %d",num ,sum);
+    return 0;
+}
+int Sumofdigit(int num)
+{
+    if (num == 0)
+      return 0;
+    return((num % 10)+Sumofdigit(num / 10));
+}
